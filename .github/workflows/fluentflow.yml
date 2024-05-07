@@ -20,7 +20,7 @@ name: dagger
         - name: Run Dagger pipeline
           run: dagger run node index.mjs
           env:
-            DAGGER_CLOUD_TOKEN: ${{ secrets.FLOW_CLOUD_TOKEN}}
+            DAGGER_CLOUD_TOKEN: ${{ secrets.DAGGER_CLOUD_TOKEN}}
         # For ephemeral runners only: overrides the default Docker stop timeout to give the Dagger engine more time to push cache data to Dagger Cloud
         - name: Stop Engine
           run: docker stop -t 300 $(docker ps --filter name="dagger-engine-*" -q)

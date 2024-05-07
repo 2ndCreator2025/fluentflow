@@ -1,0 +1,11 @@
+{
+  "name": "fluentflow",
+  "sdk": "github.com/fluentci-io/daggerverse/deno-sdk@main",
+  "version": "v0.1.0",
+  "description": "quick flow",
+  "author": "2ndCreator",
+  "license": "MIT",
+  "keywords": [
+    "cicd"
+  ]
+}
